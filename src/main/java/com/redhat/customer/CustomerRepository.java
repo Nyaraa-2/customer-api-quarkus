@@ -7,7 +7,7 @@ import java.util.Optional;
 
 @ApplicationScoped
 public class CustomerRepository implements PanacheRepositoryBase<CustomerEntity,Integer> {
-    public Optional<CustomerEntity> findByFirstNameAndLastName(String firstName, String lastName) {
+    public Optional<CustomerEntity> findByFirstNameAndLastName(String firstName) {
         return find("firstName",firstName).stream().findAny();
     }
 }

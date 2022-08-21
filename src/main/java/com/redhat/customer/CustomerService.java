@@ -69,7 +69,7 @@ public class CustomerService {
     @Transactional
     public void save(@Valid Customer customer) {
         log.debug("Saving Customer: {}", customer);
-        if (customerRepository.findByFirstNameAndLastName(customer.getFirstName(), customer.getLastName()).isPresent())
+        if (customerRepository.findByFirstNameAndLastName(customer.getFirstName()).isPresent())
             throw new CustomerException(new BadRequestException(CUSTOMER_ALREADY_EXIST));
         CustomerEntity entity = customerMapper.toEntity(customer);
         customerRepository.persist(entity);
