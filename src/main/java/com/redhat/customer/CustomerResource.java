@@ -173,6 +173,11 @@ public class CustomerResource {
                     mediaType = MediaType.TEXT_PLAIN
             )
     )
+    @APIResponse(
+            responseCode = "404",
+            description = "No Customer found for customerId provided",
+            content = @Content(mediaType = MediaType.APPLICATION_JSON)
+    )
     public Response delete(@Parameter(name = "customerId", required = true) @PathParam("customerId") Integer customerId){
         customerService.delete(customerId);
         return Response.status(Response.Status.ACCEPTED.getStatusCode(),"Delete account ok").build();
