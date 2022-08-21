@@ -13,6 +13,57 @@ You can run your application in dev mode that enables live coding using:
 
 > **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
 
+## Swagger UI
+
+Swagger UI allows anyone — be it your development team or your end consumers — to visualize and interact with the API’s resources without having any of the implementation logic in place. It’s automatically generated from your OpenAPI (formerly known as Swagger) Specification, with the visual documentation making it easy for back end implementation and client side consumption.
+
+```shell script
+<dependency>
+    <groupId>io.quarkus</groupId>
+    <artifactId>quarkus-smallrye-openapi</artifactId>
+</dependency>
+```
+
+> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/swagger-ui/.
+
+
+## Health
+
+One of the greatest things about Quarkus is the ability to get very powerful base functionality out of the box simply by adding an extension. A great example is the quarkus-smallrye-health extension. Adding this extension to the demo app will illustrate what it can do.
+```shell script
+<dependency>
+    <groupId>io.quarkus</groupId>
+    <artifactId>quarkus-smallrye-health</artifactId>
+</dependency>
+```
+
+> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/health.
+
+```shell script
+{
+    "status": "UP",
+    "checks": [
+        {
+            "name": "Database connections health check",
+            "status": "UP"
+        }
+    ]
+}
+```
+
+## Metrics
+
+Metrics are a must-have for any application. It's better to include them early to ensure they're available when you really need them. Luckily, there is a Quarkus extension that makes this easy.
+```shell script
+<dependency>
+    <groupId>io.quarkus</groupId>
+    <artifactId>quarkus-micrometer-registry-prometheus</artifactId>
+</dependency>
+```
+
+> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/metrics.
+
+
 ## Packaging and running the application
 
 The application can be packaged using:
