@@ -108,11 +108,5 @@ If you want to learn more about building native executables, please consult http
 
 ## Related Guides
 
+[Project Source 👊](https://developers.redhat.com/articles/2022/02/03/build-rest-api-ground-quarkus-20#summary)
 
-## Provided Code
-
-### RESTEasy Reactive
-
-Easily start your Reactive RESTful Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
