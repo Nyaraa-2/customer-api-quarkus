@@ -4,9 +4,10 @@
 
 
 # customer-api Project
-### Built With
-![GitHub top language](https://img.shields.io/github/languages/top/Nyaraa-2/customer-api-quarkus)
-
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
