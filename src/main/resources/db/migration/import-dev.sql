@@ -1,4 +1,4 @@
 INSERT INTO CUSTOMER (firstName,lastName,suffix,email,phone)
-VALUES ('Marina','Vandenbosch','+33','marina.vandenbosch@outlook.fr','0623816414');
+VALUES ('Marina','Vdb','+33','marina.vdb@outlook.fr','0601020304');
 INSERT INTO CUSTOMER (firstName,lastName,suffix,email,phone)
-VALUES ('Wendy','Vigneron','+33','wendy.vigneron@hotmail.fr','0642258412');
+VALUES ('Wendy','Vgn','+33','wendy.vgn@hotmail.fr','0605060708');
